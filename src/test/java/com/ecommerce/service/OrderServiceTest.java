@@ -3,6 +3,7 @@ package com.ecommerce.service;
 import com.ecommerce.entity.Order;
 import com.ecommerce.model.OrderEvent;
 import com.ecommerce.repository.OrderRepository;
+import com.ecommerce.service.impl.OrderServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
@@ -18,7 +19,7 @@ import static org.mockito.Mockito.*;
 class OrderServiceTest {
 
     @InjectMocks
-    private OrderService orderService;
+    private OrderServiceImpl orderService;
 
     @Mock
     private OrderRepository orderRepository;
